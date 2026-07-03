@@ -4,111 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo da Natureza</title>
+
     <link rel="stylesheet" href="giselle.css">
 </head>
+
 <body>
 
 <header class="banner">
-    <div class="overlay">
-        <div class="topo">
-            <div class="logo">
-                🌿 Mundo da Natureza
-            </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+    <nav class="menu">
+
+        <div class="logo">
+            🌿 Mundo da Natureza
         </div>
 
-        <div class="texto-banner">
-            <h1>Conheça a Beleza da Natureza</h1>
-            <p>Preservar hoje é garantir o amanhã.</p>
-        </div>
+        <ul>
+
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="banner-texto">
+
+        <h1>Explore a beleza da Natureza</h1>
+
+        <p>
+            Descubra paisagens incríveis, curiosidades e aprenda
+            como preservar o planeta para as futuras gerações.
+        </p>
+
+        <a href="#sobre" class="botao">
+            Saiba Mais
+        </a>
+
     </div>
+
 </header>
 
-<div class="container">
 
-<main>
+<div class="conteudo">
 
-<section class="card">
-<h2>Florestas</h2>
-<p>As florestas são fundamentais para o equilíbrio ambiental, fornecendo oxigênio, abrigo para animais e ajudando no controle do clima.</p>
-</section>
+<main id="sobre">
 
-<section class="card">
-<h2>Oceanos</h2>
-<p>Os oceanos cobrem cerca de 70% da superfície terrestre e abrigam milhares de espécies marinhas.</p>
-</section>
+    <section class="card">
 
-<section class="card">
-<h2>Animais</h2>
-<p>A biodiversidade garante o funcionamento dos ecossistemas e a manutenção da vida no planeta.</p>
-</section>
+        <h2>🌳 Florestas</h2>
 
-<section class="card">
-<h2>Preservação</h2>
-<p>Reciclar, economizar água e plantar árvores são pequenas atitudes que fazem grande diferença.</p>
-</section>
+        <p>
+            As florestas produzem oxigênio, regulam o clima e servem
+            de abrigo para milhares de espécies animais.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>🌊 Oceanos</h2>
+
+        <p>
+            Os oceanos cobrem aproximadamente 70% da superfície
+            terrestre e ajudam no equilíbrio climático.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>🦜 Biodiversidade</h2>
+
+        <p>
+            A diversidade de plantas e animais garante o funcionamento
+            dos ecossistemas do planeta.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>♻ Sustentabilidade</h2>
+
+        <p>
+            Pequenas atitudes como reciclar, economizar água e plantar
+            árvores fazem enorme diferença.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>🌎 Meio Ambiente</h2>
+
+        <p>
+            Cuidar do meio ambiente significa preservar recursos
+            naturais para as próximas gerações.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>🍃 Natureza Viva</h2>
+
+        <p>
+            Cada ser vivo possui um papel importante no equilíbrio
+            da vida na Terra.
+        </p>
+
+    </section>
 
 </main>
 
-<aside>
 
-<h2>Curiosidades</h2>
+<aside id="curiosidades">
 
-<div class="caixa">
-🌱 Uma árvore adulta pode produzir oxigênio suficiente para até quatro pessoas.
-</div>
+    <h2>Curiosidades</h2>
 
-<div class="caixa">
-🐢 Algumas tartarugas vivem mais de 150 anos.
-</div>
+    <div class="curiosidade">
+        🌱 Uma árvore adulta pode produzir oxigênio suficiente para quatro pessoas.
+    </div>
 
-<div class="caixa">
-💧 Apenas cerca de 3% da água do planeta é doce.
-</div>
+    <div class="curiosidade">
+        🐢 Algumas tartarugas vivem mais de 150 anos.
+    </div>
+
+    <div class="curiosidade">
+        💧 Apenas 3% da água do planeta é doce.
+    </div>
+
+    <div class="curiosidade">
+        🌻 O girassol acompanha a posição do Sol durante o dia.
+    </div>
 
 </aside>
 
 </div>
 
-<section id="contato" class="formulario">
 
-<h2>Formulário de Contato</h2>
+<section class="formulario" id="contato">
+
+<h2>Entre em Contato</h2>
 
 <form>
 
+<div class="linha">
+
+<div class="campo">
+
 <label>Nome Completo</label>
+
 <input
 type="text"
 placeholder="Digite seu nome completo"
 required>
 
+</div>
+
+<div class="campo">
+
 <label>CPF</label>
+
 <input
 type="text"
 id="cpf"
 placeholder="000.000.000-00"
 pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
 
+</div>
+
+</div>
+
+
+<div class="linha">
+
+<div class="campo">
+
 <label>Data de Nascimento</label>
+
 <input
 type="date"
 required>
 
+</div>
+
+<div class="campo">
+
 <label>E-mail</label>
+
 <input
 type="email"
-placeholder="email@exemplo.com"
+placeholder="exemplo@email.com"
 required>
 
+</div>
+
+</div>
+
+
+<div class="linha">
+
+<div class="campo">
+
 <label>Telefone</label>
+
 <input
 type="tel"
 id="telefone"
@@ -116,63 +218,135 @@ placeholder="(00) 00000-0000"
 pattern="\(\d{2}\)\s\d{5}-\d{4}"
 required>
 
+</div>
+
+<div class="campo">
+
 <label>Assunto</label>
 
 <select required>
 
 <option value="">Selecione</option>
+
+<option>Informações</option>
+
 <option>Dúvidas</option>
+
 <option>Sugestões</option>
-<option>Denúncias Ambientais</option>
+
+<option>Denúncia Ambiental</option>
+
 <option>Outros</option>
 
 </select>
 
+</div>
+
+</div>
+
+
 <label>Mensagem</label>
 
 <textarea
-rows="6"
+rows="7"
+placeholder="Digite sua mensagem..."
 required></textarea>
 
-<label class="check">
+
+<div class="aceite">
 
 <input
 type="checkbox"
 required>
 
-Aceito os termos de uso.
+<span>Aceito os termos de uso.</span>
 
-</label>
+</div>
+
 
 <button type="submit">
-Enviar
+Enviar Mensagem
 </button>
 
 </form>
 
 </section>
 
+
 <footer>
 
 <div>
+
 <h3>Sobre Nós</h3>
-<p>Projeto educativo sobre preservação ambiental.</p>
+
+<p>
+Somos um projeto voltado à conscientização ambiental,
+incentivando práticas sustentáveis.
+</p>
+
 </div>
 
 <div>
+
 <h3>Contato</h3>
-<p>Email: contato@natureza.com</p>
-<p>Telefone: (51) 99999-9999</p>
+
+<p>📧 contato@natureza.com</p>
+
+<p>📞 (51) 99999-9999</p>
+
+<p>📍 Porto Alegre - RS</p>
+
 </div>
 
 <div>
+
 <h3>Redes Sociais</h3>
+
 <p>Instagram</p>
+
 <p>Facebook</p>
+
 <p>YouTube</p>
+
 </div>
 
 </footer>
+
+
+<script>
+
+const telefone = document.getElementById("telefone");
+
+telefone.addEventListener("input", function(e){
+
+let valor = e.target.value.replace(/\D/g,"");
+
+valor = valor.replace(/^(\d{2})(\d)/g,"($1) $2");
+
+valor = valor.replace(/(\d{5})(\d)/,"$1-$2");
+
+e.target.value = valor;
+
+});
+
+
+const cpf = document.getElementById("cpf");
+
+cpf.addEventListener("input", function(e){
+
+let valor = e.target.value.replace(/\D/g,"");
+
+valor = valor.replace(/(\d{3})(\d)/,"$1.$2");
+
+valor = valor.replace(/(\d{3})(\d)/,"$1.$2");
+
+valor = valor.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
+
+e.target.value = valor;
+
+});
+
+</script>
 
 </body>
 </html>

@@ -1,190 +1,219 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:#eef7ee;
+body {
+    background: #eef6ee;
+    color: #1f2a1f;
 }
 
-.banner{
-    background:url("natureza-natural.png") center/cover no-repeat;
-    height:400px;
+.banner {
+    height: 100vh;
+    background: url("natureza-natural.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
-.overlay{
-    background:rgba(0,0,0,.45);
-    height:100%;
-    color:white;
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
 }
 
-.topo{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+.menu a:hover {
+    color: #7CFC90;
 }
 
-nav a:hover{
-    color:#90ee90;
+/* TEXTO BANNER */
+.banner-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-.texto-banner{
-    text-align:center;
-    margin-top:100px;
+.banner-texto h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
-.texto-banner h1{
-    font-size:50px;
+.banner-texto p {
+    font-size: 18px;
+    max-width: 600px;
 }
 
-.texto-banner p{
-    font-size:22px;
+.botao {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2e8b57;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.container{
-    display:grid;
-    grid-template-columns:3fr 1fr;
-    gap:20px;
-    padding:30px;
+.botao:hover {
+    background: #1f5f3e;
 }
 
-main{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.conteudo {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 40px;
 }
 
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.2);
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
-.card h2{
-    color:#2e8b57;
-    margin-bottom:10px;
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-aside{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.caixa{
-    background:#c8f0c8;
-    padding:20px;
-    border-radius:10px;
+.card h2 {
+    margin-bottom: 10px;
+    color: #2e8b57;
 }
 
-.formulario{
-    padding:40px;
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.formulario h2{
-    text-align:center;
-    margin-bottom:20px;
+.curiosidade {
+    background: #dff5df;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    max-width:700px;
-    margin:auto;
+/* FORMULÁRIO */
+.formulario {
+    background: white;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 input,
 select,
-textarea{
-    padding:12px;
-    border:1px solid #aaa;
-    border-radius:6px;
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
 }
 
-button{
-    background:#2e8b57;
-    color:white;
-    border:none;
-    padding:15px;
-    cursor:pointer;
-    border-radius:6px;
-    transition:.3s;
+textarea {
+    resize: none;
 }
 
-button:hover{
-    background:#1f5f3e;
+.aceite {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.check{
-    display:flex;
-    align-items:center;
-    gap:10px;
+button {
+    padding: 14px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-footer{
-    background:#1f4d2f;
-    color:white;
-    display:flex;
-    justify-content:space-around;
-    padding:35px;
-    margin-top:30px;
+button:hover {
+    background: #1f5f3e;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #1f3d2a;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
 }
 
-footer div{
-    width:30%;
+footer div {
+    max-width: 250px;
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-.topo{
-    flex-direction:column;
-    gap:20px;
-}
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 
-nav ul{
-    flex-direction:column;
-    text-align:center;
-}
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
 
-.container{
-    grid-template-columns:1fr;
-}
+    .banner-texto h1 {
+        font-size: 32px;
+    }
 
-footer{
-    flex-direction:column;
-    gap:25px;
-    text-align:center;
-}
-
-footer div{
-    width:100%;
-}
-
-.texto-banner h1{
-    font-size:35px;
-}
-
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 }

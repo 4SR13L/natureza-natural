@@ -11,7 +11,7 @@ body {
 }
 
 .banner {
-    height: 250px;
+    height: 300px;
     background: url("natureza-natural.png") center/cover no-repeat;
 }
 
@@ -25,7 +25,6 @@ body {
 
 .logo {
     color: white;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -45,7 +44,6 @@ body {
     color: #9fe29f;
 }
 
-/* CONTEÚDO PRINCIPAL (GRID) */
 .conteudo {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -62,18 +60,13 @@ main {
 .card {
     background: white;
     padding: 15px;
-    border: 1px solid #ddd;
+    border-left: 4px solid #2e7d32;
 }
 
-/* ASIDE (FLEXBOX) */
 aside {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-aside h2 {
-    font-size: 16px;
 }
 
 .curiosidade {
@@ -83,9 +76,10 @@ aside h2 {
 }
 
 .formulario {
-    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
     background: white;
-    margin: 20px;
+    padding: 20px;
     border: 1px solid #ddd;
 }
 
@@ -100,7 +94,6 @@ select,
 textarea {
     padding: 8px;
     border: 1px solid #bbb;
-    font-size: 14px;
 }
 
 button {
@@ -115,7 +108,6 @@ button:hover {
     background: #1f5a22;
 }
 
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -123,9 +115,7 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 20px;
-    font-size: 14px;
 }
-
 
 @media (max-width: 768px) {
 
@@ -141,7 +131,7 @@ footer {
 
     footer {
         flex-direction: column;
-        gap: 10px;
         text-align: center;
+        gap: 10px;
     }
 }

@@ -12,7 +12,7 @@ body {
 
 .banner {
     height: 100vh;
-    background: url("natureza-natural.png") center/cover no-repeat;
+    background: url("minecraft.png") center/cover no-repeat;
     display: flex;
     flex-direction: column;
 }

@@ -7,105 +7,177 @@
 
 body {
     background: #eef6ee;
-    color: #222;
+    color: #1f2a1f;
 }
 
 .banner {
-    height: 300px;
+    height: 100vh;
     background: url("natureza-natural.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
 }
 
 .logo {
     color: white;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 .menu a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #9fe29f;
+    color: #7CFC90;
+}
+
+.banner-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.banner-texto h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.banner-texto p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.botao {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2e8b57;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #1f5f3e;
 }
 
 .conteudo {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .card {
     background: white;
-    padding: 15px;
-    border-left: 4px solid #2e7d32;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #2e8b57;
 }
 
 aside {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .curiosidade {
-    background: #dfeedd;
-    padding: 10px;
-    font-size: 14px;
+    background: #dff5df;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .formulario {
-    max-width: 700px;
-    margin: 20px auto;
     background: white;
-    padding: 20px;
-    border: 1px solid #ddd;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 input,
 select,
 textarea {
-    padding: 8px;
-    border: 1px solid #bbb;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.aceite {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 button {
-    padding: 10px;
-    background: #2e7d32;
-    color: white;
+    padding: 14px;
     border: none;
+    background: #2e8b57;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #1f5a22;
+    background: #1f5f3e;
 }
 
 footer {
@@ -113,15 +185,15 @@ footer {
     justify-content: space-around;
     background: #1f3d2a;
     color: white;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+footer div {
+    max-width: 250px;
 }
 
 @media (max-width: 768px) {
-
-    .conteudo {
-        grid-template-columns: 1fr;
-    }
 
     .menu {
         flex-direction: column;
@@ -129,9 +201,17 @@ footer {
         text-align: center;
     }
 
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-texto h1 {
+        font-size: 32px;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 20px;
     }
 }

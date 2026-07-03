@@ -10,13 +10,11 @@ body {
     color: #222;
 }
 
-/* BANNER */
 .banner {
     height: 250px;
     background: url("natureza-natural.png") center/cover no-repeat;
 }
 
-/* MENU SIMPLES */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -55,7 +53,6 @@ body {
     padding: 20px;
 }
 
-/* CARDS */
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -85,7 +82,6 @@ aside h2 {
     font-size: 14px;
 }
 
-/* FORMULÁRIO */
 .formulario {
     padding: 20px;
     background: white;
@@ -119,7 +115,7 @@ button:hover {
     background: #1f5a22;
 }
 
-/* FOOTER (FLEXBOX) */
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -130,7 +126,7 @@ footer {
     font-size: 14px;
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 768px) {
 
     .conteudo {

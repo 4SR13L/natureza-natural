@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef6ee;
+}
+
+/* Banner */
+
+header{
+
+    background-image:url("natureza-natural.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    height:250px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:20px;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:yellow;
+
+}
+
+/* Grid */
+
+main{
+
+    display:grid;
+
+    grid-template-columns:3fr 1fr;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.conteudo{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    box-shadow:2px 2px 8px gray;
+
+}
+
+.card img{
+
+    width:100%;
+
+    border-radius:10px;
+
+    margin:10px 0;
+
+}
+
+/* Aside */
+
+aside{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    background:#d7f2d7;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+/* Formulário */
+
+.formulario{
+
+    background:white;
+
+    margin:20px;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+input,
+select,
+textarea{
+
+    padding:10px;
+
+    margin-bottom:15px;
+
+}
+
+textarea{
+
+    height:120px;
+
+}
+
+button{
+
+    padding:10px;
+
+    background:green;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:darkgreen;
+
+}
+
+/* Footer */
+
+footer{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    background:#1f4d1f;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+/* Responsividade */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+}
+
+main{
+
+    grid-template-columns:1fr;
+
+}
+
+footer{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+}

@@ -7,195 +7,135 @@
 
 body {
     background: #eef6ee;
-    color: #1f2a1f;
+    color: #222;
 }
 
+/* BANNER */
 .banner {
-    height: 100vh;
+    height: 250px;
     background: url("natureza-natural.png") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
 }
 
-
+/* MENU SIMPLES */
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(6px);
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .logo {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 
 .menu a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    transition: 0.3s;
+    font-size: 14px;
 }
 
 .menu a:hover {
-    color: #7CFC90;
+    color: #9fe29f;
 }
 
-/* TEXTO BANNER */
-.banner-texto {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-.banner-texto h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.banner-texto p {
-    font-size: 18px;
-    max-width: 600px;
-}
-
-.botao {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #2e8b57;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.botao:hover {
-    background: #1f5f3e;
-}
-
+/* CONTEÚDO PRINCIPAL (GRID) */
 .conteudo {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
+/* CARDS */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    padding: 15px;
+    border: 1px solid #ddd;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h2 {
-    margin-bottom: 10px;
-    color: #2e8b57;
-}
-
+/* ASIDE (FLEXBOX) */
 aside {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+}
+
+aside h2 {
+    font-size: 16px;
 }
 
 .curiosidade {
-    background: #dff5df;
-    padding: 15px;
-    border-radius: 10px;
+    background: #dfeedd;
+    padding: 10px;
+    font-size: 14px;
 }
 
 /* FORMULÁRIO */
 .formulario {
+    padding: 20px;
     background: white;
-    margin: 40px auto;
-    padding: 40px;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.formulario h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 input,
 select,
 textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-.aceite {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    font-size: 14px;
 }
 
 button {
-    padding: 14px;
-    border: none;
-    background: #2e8b57;
+    padding: 10px;
+    background: #2e7d32;
     color: white;
-    font-size: 16px;
-    border-radius: 8px;
+    border: none;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background: #1f5f3e;
+    background: #1f5a22;
 }
+
+/* FOOTER (FLEXBOX) */
 footer {
     display: flex;
     justify-content: space-around;
     background: #1f3d2a;
     color: white;
-    padding: 40px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-footer div {
-    max-width: 250px;
-}
-
+/* RESPONSIVO */
 @media (max-width: 768px) {
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
 
     .menu {
         flex-direction: column;
@@ -203,17 +143,9 @@ footer div {
         text-align: center;
     }
 
-    .conteudo {
-        grid-template-columns: 1fr;
-    }
-
-    .banner-texto h1 {
-        font-size: 32px;
-    }
-
     footer {
         flex-direction: column;
+        gap: 10px;
         text-align: center;
-        gap: 20px;
     }
 }
